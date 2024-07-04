@@ -4,7 +4,7 @@ Aplikasi pengolah data PPDB untuk jenjang SMK.
 Studi Kasus:
 SMK Harapan Jaya membuka PPDB dengan peraturan begini:
 
-1. Calonn Murid menyetor rata-rata nilai rapor di SMP dan menentukan ingin masuk ke jurusan apa.
+1. Calon Murid menyetor rata-rata nilai rapor di SMP dan menentukan ingin masuk ke jurusan apa.
 2. Jurusan yang dipilih maksimum adalah dua. Dengan demikian, boleh bila hanya memilih satu.
 3. Calon Murid juga boleh menuliskan Prestasinya. Prestasi ini diberi nilai oleh panitia PPDB, misalkan juara tingkat kota nilainya 10, juara tingkat provinsi nilainya 20, dan seterusnya.
 4. Calon Murid mengikuti Tes Khusus. Bentuk Tes Khusus ini dapat berupa Tes Berbasis Komputer, atau dapat pula hasil dari Wawancara.
