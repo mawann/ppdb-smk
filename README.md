@@ -42,6 +42,8 @@ Yang tidak dikirim ke server Mawan.net adalah:
 1. Nomor Peserta.
 2. Nama Calon Murid.
 
+Jadi kalau anda termasuk orang yang sangat berhati-hati, boleh saja nomor pendaftaran dan nama calon murid dikosongkan. Cuma ini justru mempersulit anda sendiri.
+
 Mengapa sebagian data harus dikirim ke server Mawan.net? Mengapa tidak langsung diolah di Google Spreadsheet?  
 Jawabannya: Karena saya (programmer aplikasi ini) belum menemukan cara terbaik untuk pencarian data di Spreadsheet memakai index. Jadi saya harus mencari secara berurutan (sequential). Berbeda dengan database seperti MySQL / MariaDB / SQLite di mana kita dapat mencari data dengan perintah: select * from nama_tabel where ... order by ....  
 Kalau pun bisa diakali, pasti algoritmanya menjadi panjang.  
