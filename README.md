@@ -53,6 +53,6 @@ Batasan:
 2. Panjang string (misalkan nama Jurusan) maksimal 50 karakter.
 3. Ini yang paling penting: Jangan meng-insert kolom atau menurunkan header (judul) tabel. Jangan mengganti nama sheet. Posisi telah dipatok absolut.
 
-Penyanggahan (Disclaimer):
+## Penyanggahan (Disclaimer)
 
 Mohon dicek ulang hasil perhitungan aplikasi ini dengan perhitungan manual, dan pastikan hasilnya sama. Saya khawatir hasil dari script ini tidak sesuai dengan aturan sekolah atau tidak sesuai yang diharapkan.
