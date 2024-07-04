@@ -55,4 +55,4 @@ Batasan:
 
 ## Penyanggahan (Disclaimer)
 
-Mohon dicek ulang hasil perhitungan aplikasi ini dengan perhitungan manual, dan pastikan hasilnya sama. Saya khawatir hasil dari script ini tidak sesuai dengan aturan sekolah atau tidak sesuai yang diharapkan.
+Walau pun script ini berfungsi baik di sekolah tempat saya bertugas, tapi mohon dicek ulang hasil perhitungan aplikasi ini dengan perhitungan manual, dan pastikan hasilnya sama. Saya khawatir hasil dari script ini tidak sesuai dengan aturan sekolah atau tidak sesuai yang diharapkan.
