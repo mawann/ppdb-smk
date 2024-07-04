@@ -18,7 +18,7 @@ Nah, dengan bantuan aplikasi ini, menghitung dan menghitung ulang menjadi semuda
 
 1. Jalankan [Google Spreadsheet](https://docs.google.com/spreadsheets). Ini semacam Microsoft Excel tapi dapat digunakan di peramban / web browser.
 2. Buat Blank Spreadsheet.
-3. Klik menu: File > Setelan. Lokasi tentukan *Amerika Serikat*. Jangan Indonesia, karena angka desimal di Indonesia adalah koma, sedangkan umumnya data memakai titik.
+3. Klik menu: File > Setelan. Lokasi tentukan *Amerika Serikat*. Jangan Indonesia, karena angka desimal di Indonesia adalah koma, sedangkan umumnya data angka pada file CSV memakai titik.
 5. Klik menu: Ekstensi > Apps Script.
 6. Copas isi file Kode.gs (ada di Github) ke dalam Kode.gs di editor Google Apps Script.
 7. Tutup Spreadsheet, kemudian buka lagi. Ini dilakukan agar script membuatkan sheet-sheet baru dan mengisi label-label di sel.
