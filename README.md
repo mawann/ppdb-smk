@@ -51,3 +51,4 @@ Batasan:
 
 1. Untuk versi demo, data Calon Murid maksimal 500 orang. Data ke 501 dan seterusnya tidak akan diproses. Bila data Calon Murid lebih dari 500 orang, silakan lakukan Registrasi. Saat ini cuma Rp 50.000 untuk pemakaian setahun.
 2. Panjang string (misalkan nama Jurusan) maksimal 50 karakter.
+3. Ini yang paling penting: Jangan meng-insert kolom atau menurunkan header (judul) tabel. Jangan mengganti nama sheet. Posisi telah dipatok absolut.
