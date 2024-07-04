@@ -23,7 +23,7 @@ Nah, dengan bantuan aplikasi ini, menghitung dan menghitung ulang menjadi semuda
 5. Tutup Spreadsheet, kemudian buka lagi. Ini dilakukan agar script membuatkan sheet-sheet baru dan mengisi label-label di sel.
 6. Bila muncul peringatan keamanan, pilih izinkan. Jangan khawatir, script ini aman.
 7. Daftarkan NPSN sekolah anda melalui pesan WhatsApp ke nomor [0816768911](https://wa.me/62816768911). Data yang ditulis: NPSN, Nama Sekolah, Nama Operator (nama Anda).
-8. Tuliskan NPSN yang telah didaftarkan melalui WhatsApp ke sheet Konfigurasi.
+8. Tuliskan NPSN dan nama sekolah yang telah didaftarkan melalui WhatsApp ke sheet Konfigurasi. Untuk sementara, serial number boleh dikosongkan.
 9. Pastekan data Calon Murid di Sheet1. Bobot nilai rata-rata rapor ada di Sheet1 sel G1. Bobot nilai Tes Khusus ada di Sheet1 sel H1.
 10. Tulis nama jurusan dan kuota per jurusan di sheet Jurusan. Kolom Sisa dan kolom Passing Grade dikosongkan saja. Nanti otomatis diisi oleh script.
 11. Klik menu: Hitung > Nilai akhir.
@@ -49,7 +49,7 @@ Alasan ke tiga karena Rp 50.000 sebagai biaya registrasi NPSN lumayan berarti un
 
 Batasan:
 
-1. Untuk versi demo, data Calon Murid maksimal 500 orang. Data ke 501 dan seterusnya tidak akan diproses. Bila data Calon Murid lebih dari 500 orang, mohon lakukan Registrasi. Saat ini cuma Rp 50.000 untuk pemakaian setahun.
+1. Untuk versi demo, data Calon Murid maksimal 500 orang. Data ke 501 dan seterusnya tidak akan diproses. Bila data Calon Murid lebih dari 500 orang, mohon lakukan Registrasi. Saat ini cuma Rp 50.000 untuk pemakaian satu tahun. Serial Number akan dikirim melalui WhatsApp dan sila diisikan di sheet Konfigurasi.
 2. Panjang string (misalkan nama Jurusan) maksimal 50 karakter.
 3. Ini yang paling penting: Jangan meng-insert kolom atau menurunkan header (judul) tabel. Jangan mengganti nama sheet. Posisi telah dipatok absolut.
 
