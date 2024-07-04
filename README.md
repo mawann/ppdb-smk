@@ -18,17 +18,18 @@ Nah, dengan bantuan aplikasi ini, menghitung dan menghitung ulang menjadi semuda
 
 1. Jalankan [Google Spreadsheet](https://docs.google.com/spreadsheets). Ini semacam Microsoft Excel tapi dapat digunakan di peramban / web browser.
 2. Buat Blank Spreadsheet.
-3. Klik menu: Ekstensi > Apps Script.
-4. Copas isi file Kode.gs (ada di Github) ke dalam Kode.gs di editor Google Apps Script.
-5. Tutup Spreadsheet, kemudian buka lagi. Ini dilakukan agar script membuatkan sheet-sheet baru dan mengisi label-label di sel.
-6. Bila muncul peringatan keamanan, pilih izinkan. Jangan khawatir, script ini aman.
-7. Daftarkan NPSN sekolah anda melalui pesan WhatsApp ke nomor [0816768911](https://wa.me/62816768911). Data yang ditulis: NPSN, Nama Sekolah, Nama Operator (nama Anda).
-8. Tuliskan NPSN dan nama sekolah yang telah didaftarkan melalui WhatsApp ke sheet Konfigurasi. Untuk sementara, serial number boleh dikosongkan.
-9. Pastekan data Calon Murid di Sheet1. Bobot nilai rata-rata rapor ada di Sheet1 sel G1. Bobot nilai Tes Khusus ada di Sheet1 sel H1.
-10. Tulis nama jurusan dan kuota per jurusan di sheet Jurusan. Kolom Sisa dan kolom Passing Grade dikosongkan saja. Nanti otomatis diisi oleh script.
-11. Klik menu: Hitung > Nilai akhir.
-12. Data akan dikirim ke website Mawan.net untuk diolah. Tunggu beberapa detik.
-13. Data olahan akan ditulis ulang secara otomatis ke Sheet1 dan data passing grade ditulis ke sheet Jurusan.
+3. Klik menu: File > Setelan. Lokasi tentukan *Amerika Serikat*. Jangan Indonesia, karena angka desimal di Indonesia adalah koma, sedangkan umumnya data memakai titik.
+5. Klik menu: Ekstensi > Apps Script.
+6. Copas isi file Kode.gs (ada di Github) ke dalam Kode.gs di editor Google Apps Script.
+7. Tutup Spreadsheet, kemudian buka lagi. Ini dilakukan agar script membuatkan sheet-sheet baru dan mengisi label-label di sel.
+8. Bila muncul peringatan keamanan, pilih izinkan. Jangan khawatir, script ini aman.
+9. Daftarkan NPSN sekolah anda melalui pesan WhatsApp ke nomor [0816768911](https://wa.me/62816768911). Data yang ditulis: NPSN, Nama Sekolah, Nama Operator (nama Anda).
+10. Tuliskan NPSN dan nama sekolah yang telah didaftarkan melalui WhatsApp ke sheet Konfigurasi. Untuk sementara, serial number boleh dikosongkan.
+11. Pastekan data Calon Murid di Sheet1. Bobot nilai rata-rata rapor ada di Sheet1 sel G1. Bobot nilai Tes Khusus ada di Sheet1 sel H1.
+12. Tulis nama jurusan dan kuota per jurusan di sheet Jurusan. Kolom Sisa dan kolom Passing Grade dikosongkan saja. Nanti otomatis diisi oleh script.
+13. Klik menu: Hitung > Nilai akhir.
+14. Data akan dikirim ke website Mawan.net untuk diolah. Tunggu beberapa detik.
+15. Data olahan akan ditulis ulang secara otomatis ke Sheet1 dan data passing grade ditulis ke sheet Jurusan.
 
 Mudah banget kan?
 
