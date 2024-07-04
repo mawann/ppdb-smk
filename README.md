@@ -16,14 +16,14 @@ Nah, dengan bantuan aplikasi ini, menghitung dan menghitung ulang menjadi semuda
 
 ## Petunjuk Instalasi
 
-1. Jalankan Google Spreadsheet. Ini semacam Microsoft Excel tapi dapat digunakan di peramban / web browser.
-2. Buat Spreadsheet baru.
+1. Jalankan [Google Spreadsheet](https://docs.google.com/spreadsheets). Ini semacam Microsoft Excel tapi dapat digunakan di peramban / web browser.
+2. Buat Blank Spreadsheet.
 3. Klik menu: Ekstensi > Apps Script.
 4. Copas kode 2024.php (ada di Github) ke dalam Kode.gs.
 5. Tutup Spreadsheet ini, kemudian buka lagi.
 6. Bila muncul peringatan keamanan, pilih izinkan. Jangan khawatir, script ini aman.
-7. Daftarkan NPSN sekolah anda di website Mawan.net.
-8. Tuliskan NPSN yang telah didaftarkan ke sheet Konfigurasi.
+7. Daftarkan NPSN sekolah anda melalui pesan WhatsApp ke nomor [0816768911](https://wa.me/62816768911). Data yang ditulis: NPSN, Nama Sekolah, Nama Operator (nama Anda).
+8. Tuliskan NPSN yang telah didaftarkan melalui WhatsApp ke sheet Konfigurasi.
 9. Pastekan data Calon Murid di Sheet1.
 10. Tulis nama jurusan dan kuota per jurusan di sheet Jurusan.
 11. Klik menu: Hitung > Nilai akhir.
