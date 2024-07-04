@@ -36,6 +36,7 @@ Tadi disebut bahwa script ini aman. Apa alasannya?
 Karena yang dikirim ke server Mawan.net hanya:
 1. Tanggal lahir Calon Murid. Ini untuk penentu bila ada dua Calon Murid yang Nilai Akhirnya sama. Yang lebih tua mendapat prioritas diterima.
 2. Nilai Rata-Rata Rapor, Nilai Tes Khusus, dan Nilai Prestasi.
+3. Pilihan jurusan.
 
 Yang tidak dikirim ke server Mawan.net adalah:
 1. Nomor Peserta.
