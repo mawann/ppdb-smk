@@ -131,6 +131,7 @@ function proses() {
   } catch (e) {
     SpreadsheetApp.getUi().alert(responseText);
   }
+
 }
 
 function siapkanSheet(sheetName) {
