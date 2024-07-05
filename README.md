@@ -1,6 +1,6 @@
 # PPDB SMK
 
-Aplikasi pengolah data PPDB untuk jenjang SMK.  
+Aplikasi pengolah data PPDB untuk jenjang SMK menggunakan _Google Spreadshhet_ dan _Google Apps Script_.  
 (C) Mawan A. Nugroho.
 
 ## Contoh Kasus
