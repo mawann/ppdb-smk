@@ -46,10 +46,8 @@ Yang tidak dikirim ke server Mawan.net adalah:
 Jadi kalau anda termasuk orang yang sangat berhati-hati, boleh saja nomor pendaftaran dan nama calon murid dikosongkan atau diisi data random (Lorem Ipsum). Cuma ini justru mempersulit anda sendiri ketika harus merevisi nilai.
 
 Mengapa sebagian data harus dikirim ke server Mawan.net? Mengapa tidak langsung diolah di Google Spreadsheet?  
-Jawabannya: Karena saya (programmer aplikasi ini) belum menemukan cara terbaik untuk pencarian data di Spreadsheet memakai index. Jadi saya harus mencari secara berurutan (sequential). Berbeda dengan database seperti MySQL / MariaDB / SQLite di mana kita dapat mencari data dengan perintah: select * from nama_tabel where ... order by ....  
-Kalau pun bisa diakali, pasti algoritmanya menjadi panjang.  
-Alasan ke dua karena algoritma yang saya buat adalah hak Kekayaan Intelektual yang saat ini saya belum berniat membagikannya ke public.  
-Alasan ke tiga karena Rp 50.000 sebagai biaya registrasi NPSN lumayan berarti untuk menutup biaya sewa VPS dan biaya saya jajan di Foodcourt.
+Jawabannya: Karena saya (programmer aplikasi ini) belum menemukan cara terbaik untuk pencarian data di Spreadsheet memakai index. Jadi saya harus mencari secara berurutan (sequential). Berbeda dengan database seperti MySQL / MariaDB / SQLite di mana kita dapat mencari data dengan perintah: `select * from nama_tabel where ... order by ....` 
+Kalau pun bisa diakali (misalkan dengan filter dan sort), pasti algoritmanya menjadi panjang dan tidak secepat hasil eksekusi RDBMS (MySQL, PostgreSQL, dsb).  
 
 Batasan:
 
