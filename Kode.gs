@@ -67,13 +67,14 @@ function proses() {
   Logger.log("Membaca data murid dari bari ke 3 sampai baris ke " + barisTerakhir);
 
   data['murid'] = [];
-  sheet1.getRange(3, 3, sheet1.getLastRow() - 2, 6).getValues().forEach(function(row) {
+  sheet1.getRange(3, 3, sheet1.getLastRow() - 2, 7).getValues().forEach(function(row) {
     var tanggalLahir = row[0];
     var pilihan1 = row[2];
     var pilihan2 = row[3];
     var nilaiRapor = row[4];
     var nilaiTesKhusus = row[5];
-    data['murid'].push([tanggalLahir, pilihan1, pilihan2, nilaiRapor, nilaiTesKhusus]);
+    var nilaiPrestasi = row[6];
+    data['murid'].push([tanggalLahir, pilihan1, pilihan2, nilaiRapor, nilaiTesKhusus, nilaiPrestasi]);
   });
 
   Logger.log("Mengubah array ke JSON...");
