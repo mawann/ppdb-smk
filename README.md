@@ -1,5 +1,7 @@
-# ppdb-smk
-Aplikasi pengolah data PPDB untuk jenjang SMK.
+# PPDB SMK
+
+Aplikasi pengolah data PPDB untuk jenjang SMK.  
+(C) Mawan A. Nugroho.
 
 ## Contoh Kasus
 
