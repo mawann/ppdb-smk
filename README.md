@@ -1,7 +1,7 @@
 # PPDB SMK
 
-Aplikasi pengolah data PPDB untuk jenjang SMK menggunakan _Google Spreadshhet_ dan _Google Apps Script_.  
-(C) Mawan A. Nugroho.
+Aplikasi pengolah data PPDB untuk jenjang SMK menggunakan _Google Spreadsheet_ dan _Google Apps Script_.  
+(C) Mawan A. Nugroho, 2024.
 
 ## Contoh Kasus
 
@@ -13,9 +13,9 @@ SMK Harapan Jaya membuka PPDB dengan peraturan begini:
 4. Calon Murid mengikuti Tes Khusus. Bentuk Tes Khusus ini dapat berupa Tes Berbasis Komputer, atau dapat pula hasil dari Wawancara.
 5. Nilai Akhir adalah = Nilai Rata-Rata Rapor + Nilai Tes Khusus + Nilai Prestasi, di mana tiap nilai ini diberi bobot, misalkan Nilai Rata-Rata Rapor adalah 30%, nilai Tes Khusus adalah 50%, dan nilai Prestasi adalah 20%.
 
-Bila murid yang mendaftar sedikit, menentukan siapa yang diterima dan diterima di jurusan apa, adalah mudah. Tapi akan menjadi melelahkan bila Calon Murid berjumlah ribuan orang sedangkan kursi yang tersisa hanya sedikit. Setelah selesai dilakukan perhitungan, eh tiba-tiba salah seorang Calon Murid menyusulkan sertifikat Juara Tingkat Internasional. Formasi pasti berubah. Yang tadinya diterima di pilihan ke 1 mungkin bergeser menjadi diterima di pilihan ke 2, atau malah menjadi tidak diterima bila nilainya lebih kecil. Panitia PPDB berarti harus menghitung ulang seluruh data. Capek kan?
+Bila murid yang mendaftar sedikit, menentukan siapa yang diterima dan diterima di jurusan apa, adalah mudah. Tapi akan menjadi melelahkan bila Calon Murid berjumlah ribuan orang sedangkan kursi yang tersisa hanya sedikit. Ditambah dengan Afirmasi dan Prestasi, membuat perhitungan tidak cukup hanya dengan sekali proses. Setelah selesai dilakukan perhitungan, eh tiba-tiba salah seorang Calon Murid menyusulkan sertifikat Juara Tingkat Internasional. Formasi pasti berubah. Yang tadinya diterima di pilihan ke 1 mungkin bergeser menjadi diterima di pilihan ke 2, atau malah menjadi tidak diterima bila nilainya lebih kecil. Panitia PPDB berarti harus menghitung ulang seluruh data. Capek kan?
 
-Nah, dengan bantuan aplikasi ini, menghitung dan menghitung ulang menjadi semudah mengklik satu tombol.
+Nah, dengan bantuan aplikasi ini, menghitung dan menghitung ulang menjadi semudah mengklik satu tombol. Data sekitar 1500 calon peserta didik hanya butuh waktu 20 detik untuk diproses.
 
 ## Petunjuk Instalasi
 
