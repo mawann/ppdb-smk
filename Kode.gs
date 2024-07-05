@@ -3,6 +3,11 @@
 //
 // (C) Mawan A. Nugroho, 2024.
 
+// +-----------------------------------------------------------------+
+// | PERHATIKAN! Jangan melakukan perubahan apa pun pada script ini. |
+// |             Setting dilakukan di sheet bernama Konfigurasi.     |
+// +-----------------------------------------------------------------+
+
 function proses() {
   var data = {};
 
