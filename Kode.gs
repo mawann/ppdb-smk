@@ -13,6 +13,7 @@ function proses() {
   // Jangan gunakan serial number dari sekolah lain, karena dapat berakibat 
   // data bercampur sehingga merugikan sekolah anda dan sekolah lain.
 
+  Logger.log("Membaca sheet Konfigurasi...");
   var konfigurasiSheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Konfigurasi');
   data['sekolah'] = {};
   data['sekolah']['npsn'] = konfigurasiSheet.getRange("B1").getValue();
@@ -27,6 +28,7 @@ function proses() {
   var namaJurusan = '';
   var kuota = 0;
 
+  Logger.log("Membaca sheet Jurusan...");
   var jurusanSheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Jurusan');
   var baris = 2;
   var namaJurusan = jurusanSheet.getRange(baris, 1).getValue();
@@ -43,6 +45,7 @@ function proses() {
 
   var sheet1 = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Sheet1');
 
+  Logger.log("Membaca bobot pada Sheet1");
   var bobot = sheet1.getRange(1, 7, 1, 9).getValues();
   data['bobot'] = [];
   data['bobot'].push(bobot[0][0]);
@@ -60,21 +63,23 @@ function proses() {
   // 3. Nilai-nilainya, yaitu rata-rata nilai rapor, nilai tes akhir, dan nilai prestasi.
 
   data['murid'] = [];
-  var baris = 3;
-  var tanggalLahir = sheet1.getRange(baris, 3).getValue();
-  while (tanggalLahir != '') {
-    var pilihan1 = sheet1.getRange(baris, 5).getValue();
-    var pilihan2 = sheet1.getRange(baris, 6).getValue();
-    var nilaiRapor = sheet1.getRange(baris, 7).getValue();
-    var nilaiTesKhusus = sheet1.getRange(baris, 8).getValue();
-    var nilaiPrestasi = sheet1.getRange(baris, 9).getValue();
-    data['murid'].push([tanggalLahir, pilihan1, pilihan2, nilaiRapor, nilaiTesKhusus, nilaiPrestasi]);
-    baris++;
-    var tanggalLahir = sheet1.getRange(baris, 3).getValue();
-  }
+  var barisTerakhir = sheet1.getLastRow();
+  Logger.log("Membaca data murid dari bari ke 3 sampai baris ke " + barisTerakhir);
 
+  data['murid'] = [];
+  sheet1.getRange(3, 3, sheet1.getLastRow() - 2, 6).getValues().forEach(function(row) {
+    var tanggalLahir = row[0];
+    var pilihan1 = row[2];
+    var pilihan2 = row[3];
+    var nilaiRapor = row[4];
+    var nilaiTesKhusus = row[5];
+    data['murid'].push([tanggalLahir, pilihan1, pilihan2, nilaiRapor, nilaiTesKhusus]);
+  });
+
+  Logger.log("Mengubah array ke JSON...");
   var jsonData = JSON.stringify(data);
 
+  Logger.log("Mengirim data ke Mawan.net ...");
   // Mengirim data ke website mawan.net
   var url = 'https://www.mawan.net/ppdb-smk/proses.php';
   var options = {
@@ -95,6 +100,7 @@ function proses() {
       // Menghapus header dari respons
       responseData['murid'].shift();
 
+      Logger.log("Menulis hasil perhitungan (diterima atau tidak diterima)...");
       // Menulis data ke kolom J dan K, yaitu nilai akhir dan diterima di jurusan apa.
       for (var i = 0; i < responseData['murid'].length; i++) {
         sheet1.getRange(i + 3, 10).setValue(responseData['murid'][i][0]); // Kolom J
@@ -106,6 +112,7 @@ function proses() {
       // Menghapus header dari respons
       responseData['passing_grade'].shift();
 
+      Logger.log("Menulis passing grade...");
       // Menulis data ke sheet jurusan kolom C (Sisa) dan kolom D (Passing Grade).
       for (var i = 0; i < responseData['passing_grade'].length; i++) {
         jurusanSheet.getRange(i + 2, 3).setValue(responseData['passing_grade'][i][1]);
@@ -113,6 +120,7 @@ function proses() {
       }
       // Sukses! Proses berakhir sampai di sini.
     }
+    Logger.log("Selesai.");
 
   } catch (e) {
     SpreadsheetApp.getUi().alert(responseText);
