@@ -1,7 +1,8 @@
 # ppdb-smk
 Aplikasi pengolah data PPDB untuk jenjang SMK.
 
-Studi Kasus:
+## Contoh Kasus
+
 SMK Harapan Jaya membuka PPDB dengan peraturan begini:
 
 1. Calon Murid menyetor rata-rata nilai rapor di SMP dan menentukan ingin masuk ke jurusan apa.
@@ -49,7 +50,7 @@ Mengapa sebagian data harus dikirim ke server Mawan.net? Mengapa tidak langsung 
 Jawabannya: Karena saya (programmer aplikasi ini) belum menemukan cara terbaik untuk pencarian data di Spreadsheet memakai index. Jadi saya harus mencari secara berurutan (sequential). Berbeda dengan database seperti MySQL / MariaDB / SQLite di mana kita dapat mencari data dengan perintah: `select * from nama_tabel where ... order by ....` 
 Kalau pun bisa diakali (misalkan dengan filter dan sort), pasti algoritmanya menjadi panjang dan tidak secepat hasil eksekusi RDBMS (MySQL, PostgreSQL, dsb).  
 
-Batasan:
+## Batasan
 
 1. Untuk versi demo, data Calon Murid maksimal 500 orang. Data ke 501 dan seterusnya tidak akan diproses. Bila data Calon Murid lebih dari 500 orang, mohon lakukan Registrasi. Saat ini cuma Rp 50.000 untuk pemakaian satu tahun. Serial Number akan dikirim melalui WhatsApp dan sila diisikan di sheet Konfigurasi.
 2. Panjang string (misalkan nama Jurusan) maksimal 50 karakter.
